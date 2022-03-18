@@ -13,6 +13,7 @@ import java.util.logging.Logger;
  * @author Caio Henrique Albuquerque
  * @since 17/03/22
  */
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1")
 public class CandidateController {
