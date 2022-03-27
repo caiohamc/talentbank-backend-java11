@@ -35,7 +35,7 @@ public class CandidateController {
     }
 
     @GetMapping("/candidates/{id}")
-    Candidate getCandidate(@PathVariable Long candidateId){
+    Candidate getCandidate(@PathVariable("id") Integer candidateId){
         LOGGER.info("Returning specific candidate from talent bank database with id " + candidateId);
         return candidateRepo.findById(candidateId).orElseThrow(() -> new CandidateNotFoundException(candidateId));
     }

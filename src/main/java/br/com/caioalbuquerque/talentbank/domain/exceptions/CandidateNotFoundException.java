@@ -6,7 +6,7 @@ package br.com.caioalbuquerque.talentbank.domain.exceptions;
  */
 public class CandidateNotFoundException extends RuntimeException {
 
-    public CandidateNotFoundException(Long id) {
+    public CandidateNotFoundException(Integer id) {
         super("Could not find candidate with id " + id);
     }
 }
